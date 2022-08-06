@@ -1,0 +1,7 @@
+<h1>Url Shortner</h1>
+<p> Enter the url you wanted to shortened: </p>
+
+<%= form_for Link.new, url: '/link' do |f| %>
+  <%= f.text_area :original_url %>
+  <%= f.submit "Get short url" %>
+<% end %>
